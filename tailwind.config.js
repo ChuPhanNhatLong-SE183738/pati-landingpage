@@ -8,6 +8,7 @@ export default {
         lora: ["Lora", "sans-serif"],
         nunito: ["Nunito", "sans-serif"],
         opensans: ["Open Sans", "sans-serif"],
+        trirong: ["Trirong", "serif"],
       },
     },
   },
