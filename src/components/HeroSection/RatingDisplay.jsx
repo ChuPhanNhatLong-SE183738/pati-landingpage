@@ -10,7 +10,7 @@ const RatingDisplay = () => {
           className="w-[100px]"
         />
       </div>
-      <span className="margin-0 text-[16px] font-[400px] text-black font-family-nunito">
+      <span className="margin-0 text-xs md:text-[16px] font-[400px] text-black font-family-nunito">
         4.8/5 Excellent | Based on 2381 Reviews
       </span>
     </div>

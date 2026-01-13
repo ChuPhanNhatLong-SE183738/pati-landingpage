@@ -35,14 +35,6 @@ const ProductImages = () => {
       url: "https://trysculptique.com/cdn/shop/files/LymphDrainageREWAMPEDvisualsArtboard5_2.jpg?v=1760103685",
       alt: "Product detail 3",
     },
-    {
-      url: "https://trysculptique.com/cdn/shop/files/tiredness-min.png?v=1758713216",
-      alt: "Tiredness chart",
-    },
-    {
-      url: "https://trysculptique.com/cdn/shop/files/puffiness-min.png?v=1758713216",
-      alt: "Puffiness chart",
-    },
   ];
 
   return (
@@ -122,11 +114,8 @@ const ProductImages = () => {
         </div>
       </div>
 
-      {/* =========================================
-          MOBILE/TABLET VIEW (Swiper Carousel)
-      ========================================= */}
-      <div className="lg:hidden space-y-4 max-w-[500px] mx-auto">
-        <div className="relative group">
+      <div className="lg:hidden space-y-4">
+        <div className="relative">
           <Swiper
             modules={[Navigation, Thumbs, FreeMode]}
             navigation={{
@@ -138,6 +127,7 @@ const ProductImages = () => {
                 thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
             }}
             spaceBetween={10}
+            loop={true}
             className="rounded-lg"
           >
             {allImages.map((image, index) => (
@@ -175,9 +165,7 @@ const ProductImages = () => {
             ))}
           </Swiper>
 
-          {/* CUSTOM NAVIGATION BUTTONS (No Background) */}
-          {/* Nút Trái */}
-          <button className="custom-product-prev absolute top-1/2 left-2 z-20 -translate-y-1/2 w-8 h-8 flex items-center justify-center cursor-pointer transition-transform active:scale-95">
+          <button className="custom-product-prev absolute top-1/2 left-2 z-10 -translate-y-1/2 w-8 h-8 flex items-center justify-center cursor-pointer transition-transform active:scale-95">
             <img
               src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/iconamoon_arrow-up-2-thin_1.png?v=1752126281"
               alt="Previous"
@@ -185,8 +173,7 @@ const ProductImages = () => {
             />
           </button>
 
-          {/* Nút Phải */}
-          <button className="custom-product-next absolute top-1/2 right-2 z-20 -translate-y-1/2 w-8 h-8 flex items-center justify-center cursor-pointer transition-transform active:scale-95">
+          <button className="custom-product-next absolute top-1/2 right-2 z-10 -translate-y-1/2 w-8 h-8 flex items-center justify-center cursor-pointer transition-transform active:scale-95">
             <img
               src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/iconamoon_arrow-up-2-thin.png?v=1752126281"
               alt="Next"
@@ -198,16 +185,15 @@ const ProductImages = () => {
         {/* Thumbnail Swiper */}
         <Swiper
           onSwiper={setThumbsSwiper}
-          modules={[Thumbs, FreeMode]}
+          modules={[Thumbs]}
           spaceBetween={8}
           slidesPerView={4}
-          freeMode={true}
           watchSlidesProgress={true}
           className="w-full"
         >
           {allImages.map((image, index) => (
-            <SwiperSlide key={index}>
-              <div className="cursor-pointer aspect-square rounded-md overflow-hidden border-2 border-gray-200 hover:border-gray-800 transition-colors">
+            <SwiperSlide key={index} className="cursor-pointer">
+              <div className="aspect-square rounded-md overflow-hidden border-2 border-gray-200 hover:border-gray-800 transition-colors">
                 <img
                   src={image.url}
                   alt={image.alt}

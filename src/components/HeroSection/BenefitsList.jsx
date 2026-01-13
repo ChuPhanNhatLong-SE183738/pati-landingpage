@@ -36,7 +36,7 @@ const BenefitsList = () => {
             <img
               src={benefit.icon}
               alt=""
-              className="flex-shrink-0 w-14 h-14 object-contain"
+              className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 object-contain"
             />
           ) : (
             <div className="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
@@ -53,7 +53,7 @@ const BenefitsList = () => {
               </svg>
             </div>
           )}
-          <p className="text-black text-[16px] font-family-nunito">
+          <p className="text-black text-base md:text-lg font-family-nunito">
             {benefit.text}
           </p>
         </div>

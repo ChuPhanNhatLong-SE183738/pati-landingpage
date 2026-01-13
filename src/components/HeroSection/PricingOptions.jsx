@@ -135,20 +135,20 @@ const PricingOptions = ({ selectedOption, setSelectedOption }) => {
                   <div className="flex-1">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h3 className="font-family-nunito text-lg text-gray-900 leading-tight">
+                        <h3 className="font-family-nunito text-base md:text-lg text-gray-900 leading-tight">
                           {option.title}
                         </h3>
-                        <p className="font-family-nunito text-[13px] text-[#000001] font-medium">
+                        <p className="font-family-nunito text-xs md:text-[13px] text-[#000001] font-medium">
                           {option.subtitle}
                         </p>
                       </div>
 
                       {/* Pricing Right Side */}
                       <div className="text-right leading-tight">
-                        <div className="text-lg font-semibold text-gray-900">
+                        <div className="text-base md:text-lg font-semibold text-gray-900">
                           {option.price}
                         </div>
-                        <div className="text-xs text-[#525553] line-through">
+                        <div className="text-[10px] md:text-xs text-[#525553] line-through">
                           {option.comparePrice}
                         </div>
                       </div>
@@ -174,11 +174,11 @@ const PricingOptions = ({ selectedOption, setSelectedOption }) => {
                       <img
                         src={perk.icon}
                         alt=""
-                        className="w-8 h-8 object-contain transition-all duration-200 filter brightness-0 invert"
+                        className="w-6 h-6 md:w-8 md:h-8 object-contain transition-all duration-200 filter brightness-0 invert"
                       />
 
                       {/* Text - Always White */}
-                      <span className="text-xs font-extrabold font-family-nunito tracking-wide transition-colors duration-200 text-[#fbf8f3]">
+                      <span className="text-[10px] md:text-xs font-extrabold font-family-nunito tracking-wide transition-colors duration-200 text-[#fbf8f3]">
                         {perk.text}
                       </span>
                     </div>
@@ -191,13 +191,14 @@ const PricingOptions = ({ selectedOption, setSelectedOption }) => {
       </div>
 
       {/* Delivery Info */}
-      <div className="flex items-center gap-2 mt-4 text-sm text-gray-800">
+      <div className="flex items-center gap-1 md:gap-2 text-[10px] md:text-sm text-gray-800">
         <svg
-          width={33}
-          height={18}
+          width={24}
+          height={14}
           viewBox="0 0 33 18"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="md:w-[33px] md:h-[18px]"
         >
           <mask
             id="mask0_30_2402"
@@ -217,9 +218,9 @@ const PricingOptions = ({ selectedOption, setSelectedOption }) => {
             />
           </g>
         </svg>
-        <p>
+        <p className="text-[10px] md:text-xs">
           Delivered on{" "}
-          <span className="bg-[#009468] text-white px-3 py-2 rounded">
+          <span className="bg-[#009468] text-white px-1.5 py-0.5 md:px-2 md:py-1 rounded text-[10px] md:text-xs">
             Friday, 16 January
           </span>{" "}
           with Express Shipping
@@ -227,20 +228,20 @@ const PricingOptions = ({ selectedOption, setSelectedOption }) => {
       </div>
 
       {/* Add To Cart Button */}
-      <button className="w-full bg-black hover:bg-gray-800 text-white font-extrabold text-lg py-4 rounded-xl mt-4 shadow-lg transition-transform active:scale-[0.98]">
+      <button className="w-full bg-black hover:bg-gray-800 text-white font-extrabold text-base md:text-lg py-3 md:py-4 rounded-xl shadow-lg transition-transform active:scale-[0.98]">
         ADD TO CART
       </button>
 
       {/* Footer Info */}
-      <div className="flex justify-center items-center gap-4 mt-3 text-xs text-gray-600 font-medium">
+      <div className="flex justify-center items-center gap-2 md:gap-4 mt-2 md:mt-3 text-[10px] md:text-xs text-gray-600 font-medium">
         <div className="flex items-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width={17}
-            height={17}
+            width={14}
+            height={14}
             viewBox="0 0 17 17"
             fill="none"
-            className="mr-2"
+            className="mr-1 md:mr-2 md:w-[17px] md:h-[17px]"
           >
             <path
               fillRule="evenodd"
@@ -249,18 +250,20 @@ const PricingOptions = ({ selectedOption, setSelectedOption }) => {
               fill="black"
             />
           </svg>
-          <span className="text-black font-[400]">
+          <span className="text-black font-[400] text-[10px] md:text-xs">
             Refills Ship Every 12 Week
           </span>
         </div>
-        <div className="h-4 w-[1px] bg-gray-400"></div>
+        <div className="h-3 md:h-4 w-[1px] bg-gray-400"></div>
         <div className="flex items-center gap-1">
           <img
             src="https://cdn.shopify.com/s/files/1/0779/0673/9384/files/clock.webp"
             alt="clock"
-            className="w-4 h-4 mr-2"
+            className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2"
           />
-          <span className="text-black font-[400]">Stop or Cancel Anytime</span>
+          <span className="text-black font-[400] text-[10px] md:text-xs">
+            Stop or Cancel Anytime
+          </span>
         </div>
       </div>
     </>

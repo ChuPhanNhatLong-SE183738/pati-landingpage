@@ -15,9 +15,7 @@ const HeroSection = () => {
   return (
     <section className="py-8 px-4 max-w-7xl mx-auto">
       <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
-        {/* LEFT COLUMN - Product Images */}
-        {/* FIX: Thêm div bao ngoài với min-w-0 để Swiper không phá vỡ layout Grid */}
-        <div className="w-full min-w-0 sticky top-4">
+        <div className="w-full min-w-0">
           <ProductImages />
         </div>
 

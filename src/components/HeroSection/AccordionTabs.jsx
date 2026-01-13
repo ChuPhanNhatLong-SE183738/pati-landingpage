@@ -106,7 +106,7 @@ const AccordionTabs = () => {
             onClick={() => toggleTab(idx)}
             className="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition-colors"
           >
-            <span className="font-semibold text-left">{tab.title}</span>
+            <span className="text-left">{tab.title}</span>
             <img
               src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Button_To_Expand_1_8a6027c0-281a-4c6b-8881-60673c7255ec.png?v=1758716844"
               alt="Toggle"

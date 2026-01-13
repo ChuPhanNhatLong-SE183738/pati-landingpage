@@ -47,7 +47,7 @@ const IngredientsSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1B3B36] mb-4">
+          <h2 className="text-3xl sm:text-4xl text-[#1B3B36] mb-4">
             Ingredients proven by science
           </h2>
           <div className="w-24 h-1 bg-[#1B3B36] mx-auto rounded-full"></div>
@@ -82,7 +82,7 @@ const IngredientsSection = () => {
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold text-[#1B3B36] mb-2 group-hover:text-[#2a5550] transition-colors">
+                  <h3 className="text-lg text-[#1B3B36] mb-2 group-hover:text-[#2a5550] transition-colors">
                     {ingredient.name}
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm">
