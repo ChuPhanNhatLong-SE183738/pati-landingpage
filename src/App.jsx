@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection/index";
 import LogoMarquee from "./components/LogoMarquee";
 import ProductJudge from "./components/ProductJudge";
+import WhyNothingHasWorked from "./components/WhyNothingHasWorked";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <LogoMarquee />
       <ProductJudge />
+      <WhyNothingHasWorked />
     </div>
   );
 }
