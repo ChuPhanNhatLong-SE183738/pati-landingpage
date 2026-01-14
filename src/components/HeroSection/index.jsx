@@ -13,7 +13,7 @@ const HeroSection = () => {
   const [selectedOption, setSelectedOption] = useState(2);
 
   return (
-    <section className="py-8 px-4 max-w-7xl mx-auto">
+    <div className="py-8 px-4 max-w-7xl mx-auto">
       <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
         <div className="w-full min-w-0">
           <ProductImages />
@@ -34,7 +34,7 @@ const HeroSection = () => {
           <AccordionTabs />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
