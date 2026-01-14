@@ -1,16 +1,53 @@
-# React + Vite
+# Alpha - eCommerce Developer Track | Pixel-Perfect Landing Page Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my submission for the Alpha Developer Track challenge. This project is a pixel-perfect front-end clone of the [Sculptique](https://trysculptique.com/products/lymph-cc-select) landing page, demonstrating practical UI construction skills, code structuring, and real-world problem-solving abilities.
 
-Currently, two official plugins are available:
+📂 **Source Code:** [\[Repository\]](https://github.com/ChuPhanNhatLong-SE183738/pati-landingpage)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Project Goals
 
-## React Compiler
+Following the assessment requirements, the primary goals of this project are:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  **Pixel-Perfect UI:** Accurately reproducing the layout, spacing, typography (Lora & Nunito fonts), and color palette of the original reference page.
+2.  **Responsiveness:** Ensuring a seamless experience across all devices (Desktop, Tablet, Mobile), with a focus on adapting complex layouts from single-column (mobile) to grid-based (desktop).
+3.  **Clean Code & Structure:** Building a maintainable, readable, and component-based architecture.
+4.  **Interactions:** Implementing UI states such as hover effects, carousels (Video Stories), and accordions (FAQs).
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project is built using a modern stack to ensure performance and developer experience:
+
+- **Core:** React (Vite)
+- **Styling:** Tailwind CSS (Custom configuration for brand colors and typography).
+- **Icons:** Lucide React / SVG (Sourced from the reference for accuracy).
+- **Slider/Carousel:** Swiper.js (For smooth touch interactions in the Video Stories section).
+- **Fonts:** Google Fonts (Lora for Headings, Nunito for Body text).
+
+## 🚀 How to Run
+
+To run this project locally, please follow these steps:
+
+**1. Clone the repository:**
+
+```bash
+git clone https://github.com/ChuPhanNhatLong-SE183738/pati-landingpage.git
+cd pati-landingpage
+```
+
+**2. Install dependencies:**
+
+```bash
+npm install
+# or
+yarn install
+```
+
+**3. Start the development server:**
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+**Open the local link provided in the terminal (usually http://localhost:5173) to view the project.**
