@@ -33,7 +33,7 @@ const LogoMarquee = () => {
       <div className="w-full px-4">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={1}
+          spaceBetween={30}
           slidesPerView={3}
           loop={true}
           speed={4000}
@@ -44,8 +44,10 @@ const LogoMarquee = () => {
             pauseOnMouseEnter: false,
           }}
           breakpoints={{
-            640: { slidesPerView: 5, spaceBetween: 25 },
-            1024: { slidesPerView: 7, spaceBetween: 30 },
+            // Tablet
+            640: { slidesPerView: 5, spaceBetween: 40 },
+            // Desktop
+            1024: { slidesPerView: 7, spaceBetween: 50 },
           }}
           className="swiper-linear"
         >
