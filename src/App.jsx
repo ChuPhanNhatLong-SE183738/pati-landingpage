@@ -7,6 +7,7 @@ import IngredientsList from "./components/IngredientsList";
 import LogoMarquee from "./components/LogoMarquee";
 import ProductJudge from "./components/ProductJudge";
 import ReviewRating from "./components/ReviewRating";
+import VideoList from "./components/VideoList";
 import WhyNothingHasWorked from "./components/WhyNothingHasWorked";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <ReviewRating />
       <FeatureList />
       <ExpertAdvice />
+      <VideoList />
     </div>
   );
 }

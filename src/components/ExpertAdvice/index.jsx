@@ -3,8 +3,8 @@ import React from "react";
 function ExpertAdvice() {
   return (
     <div className="bg-white py-12 md:py-20 px-4 md:px-10">
-      <div className="max-w-[1280px] mx-auto bg-[#F9F9F9] rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-sm">
-        <div className="w-full md:w-[620px] flex flex-col justify-center box-border p-[32px] text-[rgba(0,0,0,0.75)] font-[Montserrat] text-[16px] font-normal tracking-[0.6px] leading-[28.8px]">
+      <div className="max-w-[1280px] mx-auto bg-[#F9F9F9] rounded-2xl overflow-hidden flex flex-col min-[820px]:flex-row shadow-sm">
+        <div className="w-full min-[820px]:w-[620px] flex flex-col justify-center box-border p-[32px] text-[rgba(0,0,0,0.75)] font-[Montserrat] text-[16px] font-normal tracking-[0.6px] leading-[28.8px]">
           <p className="font-[Nunito] text-gray-500 text-sm md:text-base mb-3 font-medium">
             July 4th, 2025
           </p>
@@ -29,15 +29,15 @@ function ExpertAdvice() {
           </div>
 
           <div className="mt-8 flex flex-col gap-6">
-            {/* Button aligned left */}
-            <div className="self-start w-full md:w-auto">
-              <button className="bg-black text-white font-family-nunito text-[16px] md:text-[18px] font-bold px-6 md:px-10 py-3 rounded-md hover:bg-gray-800 transition-colors duration-300 w-full md:w-auto cursor-pointer whitespace-nowrap">
+            {/* Button responsive */}
+            <div className="w-full">
+              <button className="bg-black text-white font-family-nunito text-[16px] md:text-[18px] font-bold px-6 md:px-10 py-3 rounded-md hover:bg-gray-800 transition-colors duration-300 w-full min-[820px]:w-auto cursor-pointer whitespace-nowrap">
                 Try Lymphatic Drainage Risk-Free
               </button>
             </div>
 
-            {/* Guarantee centered */}
-            <div className="self-center flex items-center gap-2">
+            {/* Guarantee */}
+            <div className="flex items-center justify-center min-[820px]:justify-start gap-2">
               <img
                 src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395"
                 alt="60 day guarantee"
@@ -50,8 +50,8 @@ function ExpertAdvice() {
           </div>
         </div>
 
-        {/* Image Section - Fills remaining space */}
-        <div className="flex-1 bg-[#F3EEE0] relative min-h-[300px] md:min-h-full">
+        {/* Image Section */}
+        <div className="flex-1 bg-[#F3EEE0] relative min-h-[300px] min-[820px]:min-h-full order-first min-[820px]:order-last rounded-2xl overflow-hidden">
           <img
             src="https://trysculptique.com/cdn/shop/files/greendeskt-min.png?v=1758713213"
             alt="Dr. Emily Chen"

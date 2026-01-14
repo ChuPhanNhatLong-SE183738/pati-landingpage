@@ -127,14 +127,15 @@ function IngredientsList() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-black border border-black rounded-xl overflow-hidden gap-px">
+        <div className="lg:grid lg:grid-cols-4 lg:bg-black lg:border lg:border-black lg:rounded-xl lg:overflow-hidden lg:gap-px flex flex-col gap-4 lg:gap-0">
           {data.map((item, index) => (
             <div
               key={index}
-              className="bg-white flex flex-col h-full cursor-pointer group relative"
+              className="bg-white flex flex-col h-full cursor-pointer group relative border-2 border-black rounded-lg lg:border-0 lg:rounded-none overflow-hidden"
               onClick={() => toggleAccordion(index)}
             >
-              <div className="p-6 pb-2 flex flex-col items-center shrink-0">
+              {/* Top section */}
+              <div className="hidden lg:flex p-6 pb-2 flex-col items-center shrink-0">
                 <div className="flex items-start justify-center gap-2 w-full min-h-[40px] md:min-h-[44px]">
                   <img
                     src={item.mark}
@@ -147,7 +148,7 @@ function IngredientsList() {
                 </div>
                 <div className="flex items-center justify-center w-full h-[100px]">
                   <img
-                    className="hidden md:block w-auto max-w-[120px] max-h-[80px] mx-auto object-contain"
+                    className="w-auto max-w-[120px] max-h-[80px] mx-auto object-contain"
                     src={item.img}
                     alt={item.titleHighlight}
                     loading="lazy"
@@ -155,13 +156,20 @@ function IngredientsList() {
                 </div>
               </div>
 
+              <div className="lg:hidden px-3 pt-4 pb-2 flex items-center justify-center gap-2">
+                <img src={item.mark} className="w-4 h-4 shrink-0" alt="check" />
+                <span className="font-family-nunito text-[14px] text-[#0c7c00] tracking-wider text-center leading-tight">
+                  {item.title}
+                </span>
+              </div>
+
               <div className="w-full bg-white z-10">
-                <div className="px-3 md:px-6 py-5">
+                <div className="px-3 lg:px-6 py-3 lg:py-5">
                   <div className="flex items-start w-full select-none">
                     <div className="flex-1 flex items-start gap-2">
                       <img
                         src={item.img}
-                        className="block md:hidden w-16 h-16 object-contain shrink-0"
+                        className="w-16 h-16 lg:hidden object-contain shrink-0"
                         alt={item.titleHighlight}
                       />
                       <div className="flex-1">
