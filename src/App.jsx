@@ -1,4 +1,5 @@
 import "./App.css";
+import ExpertAdvice from "./components/ExpertAdvice";
 import FeatureList from "./components/FeatureList";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection/index";
@@ -19,6 +20,7 @@ function App() {
       <IngredientsList />
       <ReviewRating />
       <FeatureList />
+      <ExpertAdvice />
     </div>
   );
 }
