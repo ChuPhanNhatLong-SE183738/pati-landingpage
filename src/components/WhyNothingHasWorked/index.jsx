@@ -136,7 +136,7 @@ function WhyNothingHasWorked() {
         </div>
       </div>
 
-      <div className="bg-white w-full py-5 md:py-10"></div>
+      <div className="bg-white w-full py-1 md:py-4"></div>
     </>
   );
 }
