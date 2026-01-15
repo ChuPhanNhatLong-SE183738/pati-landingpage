@@ -86,7 +86,6 @@ function VideoList() {
               swiperRef.current = swiper;
             }}
             onSlideChange={handleSlideChange}
-            speed={0}
             spaceBetween={16}
             slidesPerView={1.2}
             breakpoints={{
@@ -109,7 +108,7 @@ function VideoList() {
               {Array.from({ length: maxReachableIndex + 1 }).map((_, index) => (
                 <div
                   key={index}
-                  className="flex-1 h-1 transition-all duration-300 cursor-pointer"
+                  className="flex-1 h-1 cursor-pointer"
                   style={{
                     backgroundColor:
                       index === activeIndex ? "#039869" : "#cfcbbf",
